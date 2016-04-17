@@ -18,9 +18,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from onyx device
 $(call inherit-product, device/oneplus/onyx/device.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/aosp/common.mk)
-
 # Call the proprietary setup
 $(call inherit-product-if-exists, vendor/oneplus/onyx/onyx-vendor.mk)
 
@@ -31,5 +28,3 @@ PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BRAND := OnePlus
-TARGET_VENDOR := oneplus
-TARGET_VENDOR_PRODUCT_NAME := onyx
