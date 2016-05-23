@@ -103,6 +103,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
+# Data
+ PRODUCT_PACKAGES += \
+    librmnetctl \
+    rmnetcli
+
 # Doze
 PRODUCT_PACKAGES += \
     OnyxDoze
